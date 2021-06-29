@@ -1,0 +1,67 @@
+.final-background-block{
+    position: absolute;
+    background-image: url('../images/backgroundf.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*Styles for screen < 1950px*/
+
+@media (max-width: 1950px) {
+    
+    
+
+}
+/*Styles for screen < 1950px end*/
+
+/*Styles for screen < 1550px*/
+
+@media (max-width: 1550px) {
+    
+   
+}
+/*Styles for screen < 1550px end*/
+
+/*Styles for screen < 1315px*/
+
+@media (max-width: 1315px) { 
+    .final-background-block{
+        background-image: url('../images/mbackgroundf.jpg');
+        background-position: center;
+    }
+
+    .button-block-final{
+        display: none;
+    }
+
+    .mobile-button-block{
+        height: 100%;
+        display: block;
+    }
+
+    .mobile-button-block .button-block__button{
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding-left: 150px;
+        width: 650px;
+    }
+
+    .mobile-button-block .mbutton-block__telegram-img{
+        position: absolute;
+        bottom:  40px;
+        left: calc(50% - 270px);
+        transform: translate(-50%, 0);
+        z-index: 10;
+    }
+
+    .mobile-button-block .mbutton-block__arrow-img{
+        position: absolute;
+        display: block;
+        transform: rotate(300deg);
+        bottom:  200px;
+        right: 40px;
+    }
+}
