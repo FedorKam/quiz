@@ -3,93 +3,669 @@
     <head>
         <meta charset="utf-8">
         <title>Новая высоковостребованная профессия</title>
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/main-style.css">
+        <link rel="stylesheet" href="styles/first-page.css">
+        <link rel="stylesheet" href="styles/test-page.css">
+        <link rel="stylesheet" href="styles/final-page.css">
         <link rel="stylesheet" href="styles/reset.css">
+        <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script defer type="text/javascript" src="scripts/script.js"></script>
     </head>
     <body>
         <div class="mainwrapper">
-            <div class="background-block"></div>
-            <div class="wrapper">
-                <div class="top-header"> 
-                    <img src="images/icon_new.png" class="top-header__img">
-                    <h6 class="top-header__text">Новая высоковостребованная профессия</h6>
+            <div class="loader"><div></div></div>
+            <div class="first-page">
+                <div class="background-block"></div>
+                <div class="wrapper">
+                    <div class="top-header"> 
+                        <img src="images/icon_new.png" class="top-header__img">
+                        <h6 class="top-header__text">Новая высоковостребованная профессия</h6>
+                    </div>
+                    <div class="main-header">
+                        <h2 class="main-header__text main-header__text_color_white">Менеджер по</h2>
+                        <h1 class="main-header__text main-header__text_color_blue main-header__text_bgcolor_yellow">“Автоматизации продаж”</h1>
+                        <img src="images/money.png" class="main-header__img">
+                    </div>
+                    <div class="description">
+                        <span class="description__text description__text_weight_bold">Пройди тест и узнай</span>
+                        <span class="description__text">подходит ли тебе эта профессия</span>
+                        <span class="description__text description__text_color_yellow">и сколько денег ты сможешь в ней</span>
+                        <span class="description__text description__text_color_yellow">зарабатывать.</span>
+                    </div>
+                    <div class="button-block">
+                        <button class="button-block__button">ПРОЙТИ ТЕСТ</button>
+                        <img src="images/arrow.png" class="button-block__arrow-img">
+                    </div>
                 </div>
-                <div class="main-header">
-                    <h2 class="main-header__text main-header__text_color_white">Менеджер по</h2>
-                    <h1 class="main-header__text main-header__text_color_blue main-header__text_bgcolor_yellow">“Автоматизации продаж”</h1>
-                    <img src="images/money.png" class="main-header__img">
-                </div>
-                <div class="description">
-                    <span class="description__text description__text_weight_bold">Пройди тест и узнай</span>
-                    <span class="description__text">подходит ли тебе эта профессия</span>
-                    <span class="description__text description__text_color_yellow">и сколько денег ты сможешь в ней</span>
-                    <span class="description__text description__text_color_yellow">зарабатывать.</span>
-                </div>
-                <div class="button-block">
-                    <button class="button-block__button">ПРОЙТИ ТЕСТ</button>
-                    <img src="images/arrow.png" class="button-block__arrow-img">
+                <div class="information-block">
+                    <div class="information-block__hidden-block information-block__hidden-block_number_1">
+                        <div class="information-block__point">
+                            <h6 class="information-block__header">6.2. Системный гений</h6>
+                            <span class="information-block__text">У вас есть способности для реализации сложных проектов, Вы способны выстраивать объемные алгоритмы для компаний. Создавать бизнес модели которые становятся легендами.</span>
+                        </div>
+                    </div>
+                    <div class="information-block__hidden-block information-block__hidden-block_number_2">
+                        <div class="information-block__point">
+                            <h6 class="information-block__header">8.7. Аналитический сканер</h6>
+                            <span class="information-block__text">Прокачивайте навык аналитики. Вы хорошо можете видеть узкие горлышки компаний.И выводить их из кризиса.</span>
+                        </div>
+                    </div>
+                    <div class="information-block__hidden-block information-block__hidden-block_number_3">
+                        <div class="information-block__point">
+                            <h6 class="information-block__header">12.1. Стратегический гигант</h6>
+                            <span class="information-block__text">Вам важно прокачивать навык стратегий. В бизнесе вы можете прописать эффективный путь компании и увеличить обороты.</span>
+                        </div>
+                    </div>
+                    <div class="information-block__hidden-block information-block__hidden-block_number_4">
+                        <div class="information-block__point">
+                            <h6 class="information-block__header">1.1. Технический эксперт по реализации</h6>
+                            <span class="information-block__text">Ваше сильное качество технически видеть структуру построения тунелей продаж и выстраивания отношений с клиентом.</span>
+                        </div>
+                    </div>
+                    <div class="information-block__hidden-block information-block__hidden-block_number_5">
+                        <div class="information-block__point">
+                            <h6 class="information-block__header">13.9. Методолог продуктов</h6>
+                            <span class="information-block__text">Ваше сильное качество, распаковка смыслов компаний, и простройка маркетинговых стратегий. Доход в данном направлении от 40 000 - 400 000</span>
+                        </div>
+                    </div>
+                    <div class="information-block__hidden-block information-block__hidden-block_number_6">
+                        <div class="information-block__point">
+                            <h6 class="information-block__header">10.1. Смысловик - распаковщик</h6>
+                            <span class="information-block__text">Вы можете создавать продающие смыслы для компании и доносить ценности до клиентов. Важно прокачиать навык в данном направлении.</span>
+                        </div>
+                    </div>
+                    <div class="information-block__hidden-block information-block__hidden-block_number_7">
+                        <div class="information-block__point">
+                            <h6 class="information-block__header">7.3. Создатель продающего контента.</h6>
+                            <span class="information-block__text">Ваша уникальная способность, создавать контент наполнение для тунелей продаж в компании. Заработок от 30 000 - 500 000 р.</span>
+                        </div>
+                    </div>
+                    <div class="information-block__hidden-block information-block__hidden-block_number_8">
+                        <div class="information-block__point">
+                            <h6 class="information-block__header">4.3. Идеолог</h6>
+                            <span class="information-block__text">У вас сильные ценности, вы можете внедрять в компанию идеологию и доносить ее до конечного потребителя. Заработок от 50 000 до 300 000 р.</span>
+                        </div>
+                    </div>
+                    <div class="information-block__hidden-block information-block__hidden-block_number_9">
+                        <div class="information-block__point">
+                            <h6 class="information-block__header">6.1. Ты системный</h6>
+                            <span class="information-block__text">Если у вас навыки аналитического и стратегического мышления. Мы это определим с помощью теста. Доход системного человека с профессией менеджер по “Автоматизации продаж” 50 000 - 500 000 руб.</span>
+                        </div>
+                    </div>
+                    <div class="information-block__hidden-block information-block__hidden-block_number_10">
+                        <div class="information-block__point">
+                            <h6 class="information-block__header">2.1. Ты творческий</h6>
+                            <span class="information-block__text">Творческому человеку можно реализовать свои способности в построении вареативного тунеля продаж. И создавать новые продукты, схемы продаж которые увеличивают колиество денег у работодателя. Доход такой услуги от 100 000 - 700 000 руб.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="information-block">
-                <div class="information-block__hidden-block information-block__hidden-block_number_1">
-                    <div class="information-block__point">
-                        <h6 class="information-block__header">6.2. Системный гений</h6>
-                        <span class="information-block__text">У вас есть способности для реализации сложных проектов, Вы способны выстраивать объемные алгоритмы для компаний. Создавать бизнес модели которые становятся легендами.</span>
+            <div class="test-block">
+                <div class="question-block">
+                    <h2 class="question-block__header">Выберите только одно, что вам<br/>ближе всего из перечисленного?</h2>
+                    <div class="progress-block">
+                        <span class="progress-block__text">Готово на 12%</span>
+                        <div class="progress-block__wrapper">
+                            <span class="progress-block__line" style="width: 12%"><p style="opacity: 0;">.</p></span>
+                        </div>
+                    </div>
+                    <div class="answer">
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="1" type="radio" name="radio-1"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы практикуете йогу?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="2" type="radio" name="radio-1"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Любите писать стихи? Текста?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="3" type="radio" name="radio-1"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите пофилософствовать и поговорить на глубокие темы?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="4" type="radio" name="radio-1"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вам нравиться вчитываться в суть текста?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="5" type="radio" name="radio-1"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы усидчивы за компьютером? Можете просидеть целый день.</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="6" type="radio" name="radio-1"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите планировать?</span>
+                            </label>
+                    </div>
+                    <div class="control-block">
+                        <button class="control-block__previous control-block__previous_active_false">НАЗАД</button>
+                        <div class="control-block__result control-block__result_mobile_true">
+                            <button class="control-block__notallowedresult">В конце<br/>результат теста</button>
+                            <img class="control-block__resultimg" src="images/result.png">
+                        </div>
                     </div>
                 </div>
-                <div class="information-block__hidden-block information-block__hidden-block_number_2">
-                    <div class="information-block__point">
-                        <h6 class="information-block__header">8.7. Аналитический сканер</h6>
-                        <span class="information-block__text">Прокачивайте навык аналитики. Вы хорошо можете видеть узкие горлышки компаний.И выводить их из кризиса.</span>
+                <div class="additional-block">
+                    <div class="expert-block">
+                        <img src="images/photo.png" class="expert-block__photo">
+                        <span class="expert-block__name">Алекс Санбаев</span>
+                        <span class="expert-block__description">Эксперт по автоматизациям и делегированию</span>
+                        <div class="speech">
+                            <div class="speech__particle"></div>
+                            <span class="speech__text">Получите подробную расшифровку теста и пошаговые инструкции для освоения професси по вашим сильным сторонам</span>
+                        </div>
+                    </div>
+                    <div class="transcript-test">
+                        <div class="transcript-test__button" title="доступно после прохождения теста">
+                            <span class="transcript-test__text">РАСШИФРОВКА <br/>&emsp; ВАШЕГО РЕЗУЛЬТАТА</span>
+                        </div>
+                        <img src="images/prize.png" class="transcript-test__img" title="доступно после прохождения теста">
                     </div>
                 </div>
-                <div class="information-block__hidden-block information-block__hidden-block_number_3">
-                    <div class="information-block__point">
-                        <h6 class="information-block__header">12.1. Стратегический гигант</h6>
-                        <span class="information-block__text">Вам важно прокачивать навык стратегий. В бизнесе вы можете прописать эффективный путь компании и увеличить обороты.</span>
+            </div>
+            <div class="test-block">
+                <div class="question-block">
+                    <h2 class="question-block__header">Выберите только одно, что вам<br/>ближе всего из перечисленного?</h2>
+                    <div class="progress-block">
+                        <span class="progress-block__text">Готово на 25%</span>
+                        <div class="progress-block__wrapper">
+                            <span class="progress-block__line" style="width: 25%"><p style="opacity: 0;">.</p></span>
+                        </div>
+                    </div>
+                    <div class="answer">
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="7" type="radio" name="radio-2"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите анализировать людей?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="6" type="radio" name="radio-2"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите чтобы все лежало аккуратно и на своих местах?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="1" type="radio" name="radio-2"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы откажитесь от денег, если будете знать что услуга или продукт несет вред?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="2" type="radio" name="radio-2"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите поговорить на самые разные темы, если собеседник вам интересен?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="3" type="radio" name="radio-2"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите по капаться в людях?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="4" type="radio" name="radio-2"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите рассказывать истории или событии с эмоциями?</span>
+                            </label>
+                    </div>
+                    <div class="control-block">
+                        <button class="control-block__previous control-block__previous_js_on">НАЗАД</button>
+                        <div class="control-block__result control-block__result_mobile_true">
+                            <button class="control-block__notallowedresult">В конце<br/>результат теста</button>
+                            <img class="control-block__resultimg" src="images/result.png">
+                        </div>
                     </div>
                 </div>
-                <div class="information-block__hidden-block information-block__hidden-block_number_4">
-                    <div class="information-block__point">
-                        <h6 class="information-block__header">1.1. Технический эксперт по реализации</h6>
-                        <span class="information-block__text">Ваше сильное качество технически видеть структуру построения тунелей продаж и выстраивания отношений с клиентом.</span>
+                <div class="additional-block">
+                    <div class="expert-block">
+                        <img src="images/photo.png" class="expert-block__photo">
+                        <span class="expert-block__name">Алекс Санбаев</span>
+                        <span class="expert-block__description">Эксперт по автоматизациям и делегированию</span>
+                        <div class="speech">
+                            <div class="speech__particle"></div>
+                            <span class="speech__text">Получите подробную расшифровку теста и пошаговые инструкции для освоения професси по вашим сильным сторонам</span>
+                        </div>
+                    </div>
+                    <div class="transcript-test">
+                        <div class="transcript-test__button" title="доступно после прохождения теста">
+                            <span class="transcript-test__text">РАСШИФРОВКА <br/>&emsp; ВАШЕГО РЕЗУЛЬТАТА</span>
+                        </div>
+                        <img src="images/prize.png" class="transcript-test__img" title="доступно после прохождения теста">
                     </div>
                 </div>
-                <div class="information-block__hidden-block information-block__hidden-block_number_5">
-                    <div class="information-block__point">
-                        <h6 class="information-block__header">13.9. Методолог продуктов</h6>
-                        <span class="information-block__text">Ваше сильное качество, распаковка смыслов компаний, и простройка маркетинговых стратегий. Доход в данном направлении от 40 000 - 400 000</span>
+            </div>
+            <div class="test-block">
+                <div class="question-block">
+                    <h2 class="question-block__header">Выберите только одно, что вам<br/>ближе всего из перечисленного?</h2>
+                    <div class="progress-block">
+                        <span class="progress-block__text">Готово на 37%</span>
+                        <div class="progress-block__wrapper">
+                            <span class="progress-block__line" style="width: 37%"><p style="opacity: 0;">.</p></span>
+                        </div>
+                    </div>
+                    <div class="answer">
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="5" type="radio" name="radio-3"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите компьютерные игры?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="6" type="radio" name="radio-3"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы преданны цели, вам гораздо поменять путь к достижению цели чем саму цель?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="7" type="radio" name="radio-3"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы часто анализируете случившиеся ситуации или ситуации которые могут произойти?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="8" type="radio" name="radio-3"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите таблицы, структурировать свои планы?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="1" type="radio" name="radio-3"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите слушать человека, но еще его чувствовать эмоциональность ?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="2" type="radio" name="radio-3"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите рассказывать и рекомендовать своим знакомым продукт или услугу, если вы попробовали и она вам очень понравилась?</span>
+                            </label>
+                    </div>
+                    <div class="control-block">
+                        <button class="control-block__previous control-block__previous_js_on">НАЗАД</button>
+                        <div class="control-block__result control-block__result_mobile_true">
+                            <button class="control-block__notallowedresult">В конце<br/>результат теста</button>
+                            <img class="control-block__resultimg" src="images/result.png">
+                        </div>
                     </div>
                 </div>
-                <div class="information-block__hidden-block information-block__hidden-block_number_6">
-                    <div class="information-block__point">
-                        <h6 class="information-block__header">10.1. Смысловик - распаковщик</h6>
-                        <span class="information-block__text">Вы можете создавать продающие смыслы для компании и доносить ценности до клиентов. Важно прокачиать навык в данном направлении.</span>
+                <div class="additional-block">
+                    <div class="expert-block">
+                        <img src="images/photo.png" class="expert-block__photo">
+                        <span class="expert-block__name">Алекс Санбаев</span>
+                        <span class="expert-block__description">Эксперт по автоматизациям и делегированию</span>
+                        <div class="speech">
+                            <div class="speech__particle"></div>
+                            <span class="speech__text">Получите подробную расшифровку теста и пошаговые инструкции для освоения професси по вашим сильным сторонам</span>
+                        </div>
+                    </div>
+                    <div class="transcript-test">
+                        <div class="transcript-test__button" title="доступно после прохождения теста">
+                            <span class="transcript-test__text">РАСШИФРОВКА <br/>&emsp; ВАШЕГО РЕЗУЛЬТАТА</span>
+                        </div>
+                        <img src="images/prize.png" class="transcript-test__img" title="доступно после прохождения теста">
                     </div>
                 </div>
-                <div class="information-block__hidden-block information-block__hidden-block_number_7">
-                    <div class="information-block__point">
-                        <h6 class="information-block__header">7.3. Создатель продающего контента.</h6>
-                        <span class="information-block__text">Ваша уникальная способность, создавать контент наполнение для тунелей продаж в компании. Заработок от 30 000 - 500 000 р.</span>
+            </div>
+            <div class="test-block">
+                <div class="question-block">
+                    <h2 class="question-block__header">Выберите только одно, что вам<br/>ближе всего из перечисленного?</h2>
+                    <div class="progress-block">
+                        <span class="progress-block__text">Готово на 50%</span>
+                        <div class="progress-block__wrapper">
+                            <span class="progress-block__line" style="width: 50%"><p style="opacity: 0;">.</p></span>
+                        </div>
+                    </div>
+                    <div class="answer">
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="3" type="radio" name="radio-4"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите читать книги с глубоким смыслом?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="4" type="radio" name="radio-4"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите читать научные книги?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="5" type="radio" name="radio-4"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Не любите читать совсем</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="6" type="radio" name="radio-4"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите читать книги с очень интересным и необычным концом?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="7" type="radio" name="radio-4"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы любите читать книги направления бизнес?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="8" type="radio" name="radio-4"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Когда вы куда-то едите вы любите проложить четкий маршрут в точку Б?</span>
+                            </label>
+                    </div>
+                    <div class="control-block">
+                        <button class="control-block__previous control-block__previous_js_on">НАЗАД</button>
+                        <div class="control-block__result control-block__result_mobile_true">
+                            <button class="control-block__notallowedresult">В конце<br/>результат теста</button>
+                            <img class="control-block__resultimg" src="images/result.png">
+                        </div>
                     </div>
                 </div>
-                <div class="information-block__hidden-block information-block__hidden-block_number_8">
-                    <div class="information-block__point">
-                        <h6 class="information-block__header">4.3. Идеолог</h6>
-                        <span class="information-block__text">У вас сильные ценности, вы можете внедрять в компанию идеологию и доносить ее до конечного потребителя. Заработок от 50 000 до 300 000 р.</span>
+                <div class="additional-block">
+                    <div class="expert-block">
+                        <img src="images/photo.png" class="expert-block__photo">
+                        <span class="expert-block__name">Алекс Санбаев</span>
+                        <span class="expert-block__description">Эксперт по автоматизациям и делегированию</span>
+                        <div class="speech">
+                            <div class="speech__particle"></div>
+                            <span class="speech__text">Получите подробную расшифровку теста и пошаговые инструкции для освоения професси по вашим сильным сторонам</span>
+                        </div>
+                    </div>
+                    <div class="transcript-test">
+                        <div class="transcript-test__button" title="доступно после прохождения теста">
+                            <span class="transcript-test__text">РАСШИФРОВКА <br/>&emsp; ВАШЕГО РЕЗУЛЬТАТА</span>
+                        </div>
+                        <img src="images/prize.png" class="transcript-test__img" title="доступно после прохождения теста">
                     </div>
                 </div>
-                <div class="information-block__hidden-block information-block__hidden-block_number_9">
-                    <div class="information-block__point">
-                        <h6 class="information-block__header">6.1. Ты системный</h6>
-                        <span class="information-block__text">Если у вас навыки аналитического и стратегического мышления. Мы это определим с помощью теста. Доход системного человека с профессией менеджер по “Автоматизации продаж” 50 000 - 500 000 руб.</span>
+            </div>
+            <div class="test-block">
+                <div class="question-block">
+                    <h2 class="question-block__header">Какой был ваш самый любимый урок в школе?</h2>
+                    <div class="progress-block">
+                        <span class="progress-block__text">Готово на 62%</span>
+                        <div class="progress-block__wrapper">
+                            <span class="progress-block__line" style="width: 62%"><p style="opacity: 0;">.</p></span>
+                        </div>
+                    </div>
+                    <div class="answer">
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="1" type="radio" name="radio-5"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Литература</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="2" type="radio" name="radio-5"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Русский язык</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="3" type="radio" name="radio-5"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">История</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="4" type="radio" name="radio-5"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Иностранный язык</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="5" type="radio" name="radio-5"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Математика</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="6" type="radio" name="radio-5"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Физика</span>
+                            </label>
+                    </div>
+                    <div class="control-block">
+                        <button class="control-block__previous control-block__previous_js_on">НАЗАД</button>
+                        <div class="control-block__result control-block__result_mobile_true">
+                            <button class="control-block__notallowedresult">В конце<br/>результат теста</button>
+                            <img class="control-block__resultimg" src="images/result.png">
+                        </div>
                     </div>
                 </div>
-                <div class="information-block__hidden-block information-block__hidden-block_number_10">
-                    <div class="information-block__point">
-                        <h6 class="information-block__header">2.1. Ты творческий</h6>
-                        <span class="information-block__text">Творческому человеку можно реализовать свои способности в построении вареативного тунеля продаж. И создавать новые продукты, схемы продаж которые увеличивают колиество денег у работодателя. Доход такой услуги от 100 000 - 700 000 руб.</span>
+                <div class="additional-block">
+                    <div class="expert-block">
+                        <img src="images/photo.png" class="expert-block__photo">
+                        <span class="expert-block__name">Алекс Санбаев</span>
+                        <span class="expert-block__description">Эксперт по автоматизациям и делегированию</span>
+                        <div class="speech">
+                            <div class="speech__particle"></div>
+                            <span class="speech__text">Получите подробную расшифровку теста и пошаговые инструкции для освоения професси по вашим сильным сторонам</span>
+                        </div>
                     </div>
+                    <div class="transcript-test">
+                        <div class="transcript-test__button" title="доступно после прохождения теста">
+                            <span class="transcript-test__text">РАСШИФРОВКА <br/>&emsp; ВАШЕГО РЕЗУЛЬТАТА</span>
+                        </div>
+                        <img src="images/prize.png" class="transcript-test__img" title="доступно после прохождения теста">
+                    </div>
+                </div>
+            </div>
+            <div class="test-block">
+                <div class="question-block">
+                    <h2 class="question-block__header">Выберите только одно, что вам<br/>ближе всего из перечисленного?</h2>
+                    <div class="progress-block">
+                        <span class="progress-block__text">Готово на 75%</span>
+                        <div class="progress-block__wrapper">
+                            <span class="progress-block__line" style="width: 75%"><p style="opacity: 0;">.</p></span>
+                        </div>
+                    </div>
+                    <div class="answer">
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="7" type="radio" name="radio-6"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вам не приятно когда люди опаздывают?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="8" type="radio" name="radio-6"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы думаете категорией 1,2,3. алгоритмически?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="1" type="radio" name="radio-6"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Если отношение к тебе плохое, ты готов все бросить и уйти ни смотря на выгоду? Или потраченное время, силы и деньги?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="2" type="radio" name="radio-6"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вам гораздо проще донести письмом или сообщением, чем поговорить в живую?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="3" type="radio" name="radio-6"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы не любите когда льют воду, а любите конкретику?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="4" type="radio" name="radio-6"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы можете перевести не слаженную речь в четкие последовательные предложения.</span>
+                            </label>
+                    </div>
+                    <div class="control-block">
+                        <button class="control-block__previous control-block__previous_js_on">НАЗАД</button>
+                        <div class="control-block__result control-block__result_mobile_true">
+                            <button class="control-block__notallowedresult">В конце<br/>результат теста</button>
+                            <img class="control-block__resultimg" src="images/result.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="additional-block">
+                    <div class="expert-block">
+                        <img src="images/photo.png" class="expert-block__photo">
+                        <span class="expert-block__name">Алекс Санбаев</span>
+                        <span class="expert-block__description">Эксперт по автоматизациям и делегированию</span>
+                        <div class="speech">
+                            <div class="speech__particle"></div>
+                            <span class="speech__text">Получите подробную расшифровку теста и пошаговые инструкции для освоения професси по вашим сильным сторонам</span>
+                        </div>
+                    </div>
+                    <div class="transcript-test">
+                        <div class="transcript-test__button" title="доступно после прохождения теста">
+                            <span class="transcript-test__text">РАСШИФРОВКА <br/>&emsp; ВАШЕГО РЕЗУЛЬТАТА</span>
+                        </div>
+                        <img src="images/prize.png" class="transcript-test__img" title="доступно после прохождения теста">
+                    </div>
+                </div>
+            </div>
+            <div class="test-block">
+                <div class="question-block">
+                    <h2 class="question-block__header">Выберите только одно, что вам<br/>ближе всего из перечисленного?</h2>
+                    <div class="progress-block">
+                        <span class="progress-block__text">Готово на 87%</span>
+                        <div class="progress-block__wrapper">
+                            <span class="progress-block__line" style="width: 87%"><p style="opacity: 0;">.</p></span>
+                        </div>
+                    </div>
+                    <div class="answer">
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="5" type="radio" name="radio-7"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вам нравиться разбираться в том как это устроено. Это - "Что угодно от установки windows системы до разработки сайтов"</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="6" type="radio" name="radio-7"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вам легко ставить цели на 3-5 лет?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="7" type="radio" name="radio-7"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы помните о том как человек проявлялся в прошлом. и легко спрогнозируете как он поступит в будущем?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="8" type="radio" name="radio-7"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вас раздражают люди которые спонтанные и не логично живут?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="1" type="radio" name="radio-7"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы обращаете внимание какой большой смысл или большая идея лежит в компании?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="2" type="radio" name="radio-7"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вам нравиться работать с текстом, у вас есть чувство такта?</span>
+                            </label>
+                    </div>
+                    <div class="control-block">
+                        <button class="control-block__previous control-block__previous_js_on">НАЗАД</button>
+                        <div class="control-block__result control-block__result_mobile_true">
+                            <button class="control-block__notallowedresult">В конце<br/>результат теста</button>
+                            <img class="control-block__resultimg" src="images/result.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="additional-block">
+                    <div class="expert-block">
+                        <img src="images/photo.png" class="expert-block__photo">
+                        <span class="expert-block__name">Алекс Санбаев</span>
+                        <span class="expert-block__description">Эксперт по автоматизациям и делегированию</span>
+                        <div class="speech">
+                            <div class="speech__particle"></div>
+                            <span class="speech__text">Получите подробную расшифровку теста и пошаговые инструкции для освоения професси по вашим сильным сторонам</span>
+                        </div>
+                    </div>
+                    <div class="transcript-test">
+                        <div class="transcript-test__button" title="доступно после прохождения теста">
+                            <span class="transcript-test__text">РАСШИФРОВКА <br/>&emsp; ВАШЕГО РЕЗУЛЬТАТА</span>
+                        </div>
+                        <img src="images/prize.png" class="transcript-test__img" title="доступно после прохождения теста">
+                    </div>
+                </div>
+            </div>
+            <div class="test-block">
+                <div class="question-block">
+                    <h2 class="question-block__header">Выберите только одно, что вам<br/>ближе всего из перечисленного?</h2>
+                    <div class="progress-block">
+                        <span class="progress-block__text">Готово на 99%</span>
+                        <div class="progress-block__wrapper">
+                            <span class="progress-block__line" style="width: 95%"><p style="opacity: 0;">.</p></span>
+                        </div>
+                    </div>
+                    <div class="answer">
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="3" type="radio" name="radio-8"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы избегаете общения с людьми у которых много слов и мало дела.</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="4" type="radio" name="radio-8"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вам легко разобраться в любом хаусе, и можете его разгрупировать по логическим цепочкам и структурировать?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="5" type="radio" name="radio-8"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вам не надоедает копаться в деталях долгое время?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="6" type="radio" name="radio-8"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы готовы пойти на небольшие жертвы чтобы достичь значимые результаты?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="7" type="radio" name="radio-8"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы чувствуете когда в нужный момент вам нужно уйти?</span>
+                            </label>
+                            <label class="answer__option">
+                                <input class="answer__radio-input" value="8" type="radio" name="radio-8"/>
+                                <div class="anwer_point"><div></div></div>
+                                <span class="answer_text">Вы начинаете действовать только тогда когда у вас есть план?</span>
+                            </label>
+                    </div>
+                    <div class="control-block">
+                        <button class="control-block__previous control-block__previous_js_on">НАЗАД</button>
+                        <div class="control-block__result control-block__result_mobile_true">
+                            <button class="control-block__notallowedresult">В конце<br/>результат теста</button>
+                            <img class="control-block__resultimg" src="images/result.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="additional-block">
+                    <div class="expert-block">
+                        <img src="images/photo.png" class="expert-block__photo">
+                        <span class="expert-block__name">Алекс Санбаев</span>
+                        <span class="expert-block__description">Эксперт по автоматизациям и делегированию</span>
+                        <div class="speech">
+                            <div class="speech__particle"></div>
+                            <span class="speech__text">Получите подробную расшифровку теста и пошаговые инструкции для освоения професси по вашим сильным сторонам</span>
+                        </div>
+                    </div>
+                    <div class="transcript-test">
+                        <div class="transcript-test__button" title="доступно после прохождения теста">
+                            <span class="transcript-test__text">РАСШИФРОВКА <br/>&emsp; ВАШЕГО РЕЗУЛЬТАТА</span>
+                        </div>
+                        <img src="images/prize.png" class="transcript-test__img" title="доступно после прохождения теста">
+                    </div>
+                </div>
+            </div>
+            <div class="final-page">
+                <div class="final-background-block"></div>
+                <div class="wrapper">
+                    <div class="top-header"> 
+                        <img src="images/icon_new.png" class="top-header__img">
+                        <h6 class="top-header__text">Новая высоковостребованная профессия</h6>
+                    </div>
+                    <div class="main-header main-header_size_s">
+                        <h2 class="main-header__text main-header__text_color_white main-header__text_margin_left">Результат теста</h2>
+                        <h3 class="main-header__text main-header__text_color_blue main-header__text_bgcolor_yellow main-header__text_bgcolor_yellow main-header__text_size_s">менеджер по “автоматизации продаж”</h3>
+                        <img src="images/money.png" class="main-header__img">
+                    </div>
+                    <div class="description description_size_s">
+                        <span class="description__text description__text_color_white description__text_weight_bold description__text_headjs_in">12.1. Стратегический гигант</span>
+                        <span class="description__text description__text_color_white description__text_contentjs_in">Вам важно прокачивать навык стратегий. В бизнесе вы можете прописать эффективный путь компании и увеличить обороты...</span>
+                    </div>
+                    <div class="button-block button-block-final">
+                        <a class="telegram-link" href="#">
+                            <img src="images/telegram.png" class="button-block__telegram-img">
+                            <button class="button-block__button button-block__button_margin_left">получить расшифровку</button>
+                        </a>
+                        <img src="images/arrow.png" class="button-block__arrow-img button-block__arrow-img_transofm_true">
+                    </div>
+                </div>
+                <div class="mobile-button-block">
+                    <a class="telegram-link" href="#">
+                        <img src="images/telegram.png" class="mbutton-block__telegram-img">
+                        <button class="button-block__button">получить расшифровку</button>
+                    </a>
+                    <img src="images/arrow.png" class="mbutton-block__arrow-img">
                 </div>
             </div>
         </div>
