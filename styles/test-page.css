@@ -389,7 +389,8 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: auto !important;
+        height: auto;
+min- height: 100vh;
         transform: translate(0, 0);
         display: block;
     }
