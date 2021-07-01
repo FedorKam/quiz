@@ -510,3 +510,12 @@
     }
     
 }
+
+
+/*Styles for screen < 425px*/
+
+@media (max-width: 425px) {
+    .description__text{
+        font-size: 50px;
+    }
+}
