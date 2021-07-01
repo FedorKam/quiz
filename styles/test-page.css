@@ -59,10 +59,10 @@
 }
 
 .answer__option{
-    display: block;
     margin-top: 35px;
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: 20px 880px;
 }
 
 .anwer_point{
@@ -298,6 +298,7 @@
     
     .answer__option{
         margin-top: 29.75px;
+        grid-template-columns: 17px 704px;
     }
     
     .anwer_point{
@@ -397,15 +398,18 @@
     .question-block{
         width: calc(100% - 160px);
         height: auto;
+        min-height: 100%;
         display: inline-block;
         padding: 120px 90px 100px 70px;
-        background-image: url('../images/mbackground_test.jpg');
-        background-size: cover;
-        background-position: right;
+        background-image: url('../images/background_money1.png'), url('../images/mbackground_test.jpg');
+        background-size: 200px, cover;
+        background-repeat: no-repeat;
+        background-position: top 240px right -15px, 0;
     }
     
     .question-block__header{
-        font-size: 50px;
+        font-size: 58px;
+        line-height: 1.2;
     }
     
     .progress-block{
@@ -422,7 +426,7 @@
     }
     
     .progress-block__text{
-        font-size: 30px;
+        font-size: 42px;
     }
     
     .progress-block__line{
@@ -438,7 +442,6 @@
     
     .answer__option{
         margin-top: 90px;
-        display: grid;
         grid-template-columns: 50px 700px;
     }
     
@@ -446,7 +449,7 @@
         width: 50px;
         height: 50px;
         border-radius: 50px;
-        border: 6px solid white;
+        border: 4px solid white;
     }
     
     .anwer_point div{
@@ -478,9 +481,9 @@
     }
 
     .control-block__result{
-        position: relative;
+        position: absolute;
         width: 350px;
-        margin-left: 60px;
+        right: 100px;
     }
 
     .control-block__notallowedresult{
@@ -492,6 +495,23 @@
         font-size: 30px;
         text-align: left;
         padding: 10px 50px;
+    }
+
+    .control-block__title{
+        display: none;
+        position: absolute;
+        font-size: 30px;
+        font-family: TTFirsNeueExtraLight;
+        background-color: white;
+        color: #051424;
+        top: 20px;
+        padding: 10px;
+        left: 0;
+        z-index: 100;
+    }
+
+    .control-block__result:hover > .control-block__title{
+        display: block;
     }
     
     .control-block__resultimg{
