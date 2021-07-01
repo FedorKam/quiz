@@ -37,8 +37,6 @@ function form_result(){
   }
   let max_el = Math.max.apply(Math, counter);
   let max_dir = counter.indexOf(max_el);
-  console.log(counter)
-  console.log(max_dir)
   $('.description__text_headjs_in').html(result_header[max_dir - 1]);
   $('.description__text_contentjs_in').html(result_content[max_dir - 1]);
 }
