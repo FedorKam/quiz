@@ -512,10 +512,10 @@
 }
 
 
-/*Styles for screen < 425px*/
+/*Styles for screen < 1000px*/
 
-@media (max-width: 425px) {
+@media (max-width: 1000px) {
     .description__text{
-        font-size: 50px;
+        font-size: 30px;
     }
 }
