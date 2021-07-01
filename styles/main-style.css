@@ -80,8 +80,8 @@
     display: block;
 	width: 100%;
     min-width: 100px;
-    min-height: 100%;
-    height: auto !important;
+    min-height: 935px;
+    height: 100% !important;
     background-color: #FFF;
 }
 
@@ -121,6 +121,7 @@
 }
 
 .main-header_size_s{
+    margin-top: 100px;
     width: 620px;
 }
 
@@ -530,11 +531,11 @@
     
 }
 
-
 /*Styles for screen < 1000px*/
 
 @media (max-width: 1000px) {
     .description__text{
-        font-size: 30px;
+        font-size: 50px;
     }
 }
+
